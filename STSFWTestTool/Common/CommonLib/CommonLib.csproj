@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8C470327-CACD-4EAC-A7F4-F2BCCBD0ADAE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CommonLib</RootNamespace>
+    <AssemblyName>CommonLib</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NamedPipeWrapper, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NamedPipeWrapper.1.5.0\lib\net40\NamedPipeWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ButtonTagParameters.cs" />
+    <Compile Include="ComPort.cs" />
+    <Compile Include="ConfigAndSettings\Config.cs" />
+    <Compile Include="ConfigAndSettings\ConfigurationFileManagers.cs" />
+    <Compile Include="ConfigAndSettings\ObservableObject.cs" />
+    <Compile Include="Database\DoctorCard.cs" />
+    <Compile Include="Database\DoctorCardDB.cs" />
+    <Compile Include="Database\Patient.cs" />
+    <Compile Include="Database\PatientDB.cs" />
+    <Compile Include="Database\PatientVisit.cs" />
+    <Compile Include="Database\PatientVisitDB.cs" />
+    <Compile Include="Hospital.cs" />
+    <Compile Include="LoggerWrapper.cs" />
+    <Compile Include="DataBaseEnum.cs" />
+    <Compile Include="MonthlyTest.cs" />
+    <Compile Include="PictureHelper.cs" />
+    <Compile Include="PipeCommunication.cs" />
+    <Compile Include="PlumpDeviceStatusStruct.cs" />
+    <Compile Include="PrintData.cs" />
+    <Compile Include="PUATestHelper.cs" />
+    <Compile Include="PUATestResult.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestEnum.cs" />
+    <Compile Include="Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="PressureTest\DefaultPressure.csv" />
+    <None Include="PressureTest\Healthy.csv" />
+    <None Include="PressureTest\Obstructive.csv" />
+    <None Include="PressureTest\Restrictive.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DoCalc\DoCalc.csproj">
+      <Project>{2c4f17e4-fd93-486f-923f-cc10995da007}</Project>
+      <Name>DoCalc</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

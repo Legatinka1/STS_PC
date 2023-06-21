@@ -1,0 +1,471 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="doctorFirstLastNameLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15.75pt</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="doctorFirstLastNameLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="doctorFirstLastNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>196, 10</value>
+  </data>
+  <data name="doctorFirstLastNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 31</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="doctorFirstLastNameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="doctorFirstLastNameLabel.Text" xml:space="preserve">
+    <value>Doctor Name</value>
+  </data>
+  <data name="doctorFirstLastNameLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;doctorFirstLastNameLabel.Name" xml:space="preserve">
+    <value>doctorFirstLastNameLabel</value>
+  </data>
+  <data name="&gt;&gt;doctorFirstLastNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;doctorFirstLastNameLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;doctorFirstLastNameLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="dateVisitLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15.75pt</value>
+  </data>
+  <data name="dateVisitLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="dateVisitLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 10</value>
+  </data>
+  <data name="dateVisitLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 31</value>
+  </data>
+  <data name="dateVisitLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="dateVisitLabel.Text" xml:space="preserve">
+    <value>24-11-60</value>
+  </data>
+  <data name="dateVisitLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;dateVisitLabel.Name" xml:space="preserve">
+    <value>dateVisitLabel</value>
+  </data>
+  <data name="&gt;&gt;dateVisitLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dateVisitLabel.Parent" xml:space="preserve">
+    <value>itemBackgroundPictureBox</value>
+  </data>
+  <data name="&gt;&gt;dateVisitLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="bloodPresureLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15.75pt</value>
+  </data>
+  <data name="bloodPresureLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="bloodPresureLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>636, 10</value>
+  </data>
+  <data name="bloodPresureLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 31</value>
+  </data>
+  <data name="bloodPresureLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="bloodPresureLabel.Text" xml:space="preserve">
+    <value>120/80</value>
+  </data>
+  <data name="&gt;&gt;bloodPresureLabel.Name" xml:space="preserve">
+    <value>bloodPresureLabel</value>
+  </data>
+  <data name="&gt;&gt;bloodPresureLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bloodPresureLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bloodPresureLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="labelToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="testTypeLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15.75pt</value>
+  </data>
+  <data name="testTypeLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="testTypeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>831, 10</value>
+  </data>
+  <data name="testTypeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 31</value>
+  </data>
+  <data name="testTypeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="testTypeLabel.Text" xml:space="preserve">
+    <value>Pre/Post Test</value>
+  </data>
+  <data name="&gt;&gt;testTypeLabel.Name" xml:space="preserve">
+    <value>testTypeLabel</value>
+  </data>
+  <data name="&gt;&gt;testTypeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;testTypeLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;testTypeLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="openExtentionPictureBox.DisableTextColor" type="System.Drawing.Color, System.Drawing">
+    <value>Black</value>
+  </data>
+  <data name="openExtentionPictureBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="openExtentionPictureBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1041, 5</value>
+  </data>
+  <data name="openExtentionPictureBox.MouseDownTextColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="openExtentionPictureBox.MouseOverTextColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="openExtentionPictureBox.NormalTextColor" type="System.Drawing.Color, System.Drawing">
+    <value>Black</value>
+  </data>
+  <data name="openExtentionPictureBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 40</value>
+  </data>
+  <data name="openExtentionPictureBox.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="openExtentionPictureBox.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;openExtentionPictureBox.Name" xml:space="preserve">
+    <value>openExtentionPictureBox</value>
+  </data>
+  <data name="&gt;&gt;openExtentionPictureBox.Type" xml:space="preserve">
+    <value>STSGui.ButtonPictureBox, STSGui, Version=1.0.0.7, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;openExtentionPictureBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;openExtentionPictureBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="deleteExtentionPictureBox.DisableTextColor" type="System.Drawing.Color, System.Drawing">
+    <value>Black</value>
+  </data>
+  <data name="deleteExtentionPictureBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="deleteExtentionPictureBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="deleteExtentionPictureBox.MouseDownTextColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="deleteExtentionPictureBox.MouseOverTextColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="deleteExtentionPictureBox.NormalTextColor" type="System.Drawing.Color, System.Drawing">
+    <value>Black</value>
+  </data>
+  <data name="deleteExtentionPictureBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="deleteExtentionPictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="deleteExtentionPictureBox.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="deleteExtentionPictureBox.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;deleteExtentionPictureBox.Name" xml:space="preserve">
+    <value>deleteExtentionPictureBox</value>
+  </data>
+  <data name="&gt;&gt;deleteExtentionPictureBox.Type" xml:space="preserve">
+    <value>STSGui.ButtonPictureBox, STSGui, Version=1.0.0.7, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;deleteExtentionPictureBox.Parent" xml:space="preserve">
+    <value>itemBackgroundPictureBox</value>
+  </data>
+  <data name="&gt;&gt;deleteExtentionPictureBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tempertureLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15.75pt</value>
+  </data>
+  <data name="tempertureLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tempertureLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>509, 10</value>
+  </data>
+  <data name="tempertureLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 31</value>
+  </data>
+  <data name="tempertureLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="tempertureLabel.Text" xml:space="preserve">
+    <value>36.4</value>
+  </data>
+  <data name="tempertureLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;tempertureLabel.Name" xml:space="preserve">
+    <value>tempertureLabel</value>
+  </data>
+  <data name="&gt;&gt;tempertureLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tempertureLabel.Parent" xml:space="preserve">
+    <value>itemBackgroundPictureBox</value>
+  </data>
+  <data name="&gt;&gt;tempertureLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pulseLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15.75pt</value>
+  </data>
+  <data name="pulseLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pulseLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>440, 10</value>
+  </data>
+  <data name="pulseLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 31</value>
+  </data>
+  <data name="pulseLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="pulseLabel.Text" xml:space="preserve">
+    <value>98</value>
+  </data>
+  <data name="pulseLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;pulseLabel.Name" xml:space="preserve">
+    <value>pulseLabel</value>
+  </data>
+  <data name="&gt;&gt;pulseLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pulseLabel.Parent" xml:space="preserve">
+    <value>itemBackgroundPictureBox</value>
+  </data>
+  <data name="&gt;&gt;pulseLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="statusPictureBox.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="statusPictureBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="statusPictureBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>796, 10</value>
+  </data>
+  <data name="statusPictureBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 31</value>
+  </data>
+  <data name="statusPictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="statusPictureBox.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="&gt;&gt;statusPictureBox.Name" xml:space="preserve">
+    <value>statusPictureBox</value>
+  </data>
+  <data name="&gt;&gt;statusPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusPictureBox.Parent" xml:space="preserve">
+    <value>itemBackgroundPictureBox</value>
+  </data>
+  <data name="&gt;&gt;statusPictureBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="itemBackgroundPictureBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="itemBackgroundPictureBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1090, 51</value>
+  </data>
+  <data name="itemBackgroundPictureBox.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="&gt;&gt;itemBackgroundPictureBox.Name" xml:space="preserve">
+    <value>itemBackgroundPictureBox</value>
+  </data>
+  <data name="&gt;&gt;itemBackgroundPictureBox.Type" xml:space="preserve">
+    <value>STSGui.RoundedCornersPanel, STSGui, Version=1.0.0.7, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;itemBackgroundPictureBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;itemBackgroundPictureBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1092, 51</value>
+  </data>
+  <data name="&gt;&gt;labelToolTip.Name" xml:space="preserve">
+    <value>labelToolTip</value>
+  </data>
+  <data name="&gt;&gt;labelToolTip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AllVisitsItem</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

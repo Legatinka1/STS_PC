@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="login-top-left-normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login\login-top-left-normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-details-new-test-session-disable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\patients-details-new-test-session-disable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login-connect-button-over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login\login-connect-button-over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_menu_calibration_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\main-menu-calibration-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="visit-background-img" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Visit\visit-background-img.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-details-printer-items-over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\patients-details-printer-items-over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main-menu-close-normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\main-menu-close-normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_menu_logout_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\main-menu-logout-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-details-pre-post-session-down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\patients-details-pre-post-session-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-details-new-test-session-over " type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\patients-details-new-test-session-over .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Obstructive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pressure\Obstructive.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_menu_calibration_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\main-menu-calibration-over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main-menu-settings-normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\main-menu-settings-normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-list-arrow-right-btn-disable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsList\patients-list-arrow-right-btn-disable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-list-down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsList\patients-list-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="top-panel-user-img" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TopPanel\top-panel-user-img.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_menu_close_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\main-menu-close-over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="top-panel-techno-palm-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TopPanel\top-panel-techno-palm-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_menu_logout_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\main-menu-logout-over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_menu_settings_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\main-menu-settings-over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main-panel-ellipse-pink" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainPanel\main-panel-ellipse-pink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_menu_add_doctor_disable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\main-menu-add-doctor-disable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main-panel-btn-play-start-normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainPanel\main-panel-btn-play-start-normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="top-panel-main-menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TopPanel\top-panel-main-menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main-panel-background-img" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainPanel\main-panel-background-img.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patient-details-blue-background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\patient-details-blue-background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login-bottom-right-normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login\login-bottom-right-normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-list-normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsList\patients-list-normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main-panel-ellipse-blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainPanel\main-panel-ellipse-blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login-top-left-techno-palm-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login\login-top-left-techno-palm-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients_list_sort_down_arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsList\patients-list-sort-down-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="init-process" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\init-process.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_menu_adit_doctor_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\main-menu-adit-doctor-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="visit-remove-test-disable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Visit\visit-remove-test-disable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="visit-remove-test-down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Visit\visit-remove-test-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="visit-remove-test-over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Visit\visit-remove-test-over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-details-edit-btn-disable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\patients-details-edit-btn-disable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-details-new-test-session-normalEX" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\Extended\patients-details-new-test-session-normalEX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main-panel-monthly-tests-background-img" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainPanel\main-panel-monthly-tests-background-img.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-list-arrow-right-btn-over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsList\patients-list-arrow-right-btn-over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_menu_adit_doctor_disable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\main-menu-adit-doctor-disable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit-patients-details-calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\edit-patients-details-calendar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-details-comments-normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\patients-details-comments-normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients_list_sort_up_arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsList\patients-list-sort-up-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main-panel-btn-play-start-down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainPanel\main-panel-btn-play-start-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-list-arrow-right-btn-normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsList\patients-list-arrow-right-btn-normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-list-add-new-patient-normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsList\patients-list-add-new-patient-normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-details-edit-btn-normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\patients-details-edit-btn-normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="visit-remove-test-normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Visit\visit-remove-test-normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_menu_close_disable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\main-menu-close-disable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pressure-close-over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pressure\pressure-close-over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="top-panel-init" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TopPanel\top-panel-init.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-details-right-background-img-noraml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\patients-details-right-background-img-noraml.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-details-pre-post-session-disable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\patients-details-pre-post-session-disable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-details-button-background-img" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\patients-details-button-background-img.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-details-new-test-session-disableEX" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\Extended\patients-details-new-test-session-disableEX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login-top-left-over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login\login-top-left-over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main-menu-calibration-normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\main-menu-calibration-normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main-panel-visits-list-background-img" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainPanel\main-panel-visits-list-background-img.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_menu_calibration_disable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\main-menu-calibration-disable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-details-pre-post-session-over EX" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\Extended\patients-details-pre-post-session-over EX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-details-printer-items-normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\patients-details-printer-items-normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pressure-close-disable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pressure\pressure-close-disable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login-top-left-disable." type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login\login-top-left-disable..png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main-panel-ellipse-yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainPanel\main-panel-ellipse-yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login-top-left-down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login\login-top-left-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="check_box_unchecked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ServiceControls\check-box-unchecked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-list-over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsList\patients-list-over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login-bottom-right-over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login\login-bottom-right-over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pressure-close-down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pressure\pressure-close-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-list-add-new-patient-over " type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsList\patients-list-add-new-patient-over .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-details-edit-btn-down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\patients-details-edit-btn-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-details-printer-items-disable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\patients-details-printer-items-disable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="check_box_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ServiceControls\check-box-checked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-list-add-new-patient-down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsList\patients-list-add-new-patient-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_menu_settings_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\main-menu-settings-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-details-new-test-session-downEx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\Extended\patients-details-new-test-session-downEx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main-panel-btn-play-start-over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainPanel\main-panel-btn-play-start-over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-details-red-res-ellipse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\patients-details-red-res-ellipse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pressure-close-normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pressure\pressure-close-normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-details-comments-over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\patients-details-comments-over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-details-new-test-session-normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\patients-details-new-test-session-normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main-menu-add-doctor-normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\main-menu-add-doctor-normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-details-green-res-ellipse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\patients-details-green-res-ellipse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_menu_logout_disable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\main-menu-logout-disable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unselected-radiobtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ServiceControls\unselected-radiobtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-details-comments-disable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\patients-details-comments-disable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login-dialog-background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login\login-dialog-background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main-menu-adit-doctor-normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\main-menu-adit-doctor-normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main-menu-logout-normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\main-menu-logout-normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login-connect-button-normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login\login-connect-button-normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="top-panel-arrow-down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TopPanel\top-panel-arrow-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login-bottom-right-disable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login\login-bottom-right-disable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Healthy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pressure\Healthy.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-list-sort-unknown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsList\patients-list-sort-unknown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_menu_settings_disable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\main-menu-settings-disable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-list-arrow-right-btn-down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsList\patients-list-arrow-right-btn-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="top-panel-health-clinic-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TopPanel\top-panel-health-clinic-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main-panel-viewer-background-img" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainPanel\main-panel-viewer-background-img.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-list-search-disable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsList\patients-list-search-disable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-details-new-test-session-down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\patients-details-new-test-session-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="selected-radiobtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ServiceControls\selected-radiobtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="report-horizontal-long-gray-line" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Report\report-horizontal-long-gray-line.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_menu_add_doctor_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\main-menu-add-doctor-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients_list_search_background_image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsList\patients-list-search-background-image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login-connect-button-down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login\login-connect-button-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login-bottom-right-down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login\login-bottom-right-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-details-printer-items-down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\patients-details-printer-items-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Restrictive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pressure\Restrictive.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-details-edit-btn-over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\patients-details-edit-btn-over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit-patients-details-control-rectangle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\edit-patients-details-control-rectangle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login-connect-button-disable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login\login-connect-button-disable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-list-add-new-patient-disable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsList\patients-list-add-new-patient-disable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_menu_close_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\main-menu-close-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main-panel-btn-play-start-disable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainPanel\main-panel-btn-play-start-disable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-details-pre-post-session-over " type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\patients-details-pre-post-session-over .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-details-new-test-session-disableEX1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\Extended\patients-details-new-test-session-disableEX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_menu_add_doctor_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\main-menu-add-doctor-over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="top_panel_arrow_up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TopPanel\top-panel-arrow-up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Menu-Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\Menu-Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-details-comments-down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\patients-details-comments-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-details-left-background-img-noraml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\patients-details-left-background-img-noraml.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_menu_adit_doctor_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\main-menu-adit-doctor-over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-details-pre-post-session-normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\patients-details-pre-post-session-normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-details-new-test-session-over EX" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\Extended\patients-details-new-test-session-over EX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patients-details-new-test-session-over EX1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientsDetails\Extended\patients-details-new-test-session-over EX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

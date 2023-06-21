@@ -1,0 +1,686 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{73BBFC45-4175-4C21-89C3-545668727D0D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>STSGui</RootNamespace>
+    <AssemblyName>STSGui</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Control.Draggable, Version=1.0.5049.269, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Control.Draggable.1.0.5049.269\lib\net35-Client\Control.Draggable.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph, Version=5.1.7.430, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\ZedGraph.5.1.7\lib\net35-Client\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\Doctors\EditShortDoctorDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Doctors\EditShortDoctorDetails.Designer.cs">
+      <DependentUpon>EditShortDoctorDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Doctors\LogInControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Doctors\LogInControl.Designer.cs">
+      <DependentUpon>LogInControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MainPanel\MainPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MainPanel\MainPanel.Designer.cs">
+      <DependentUpon>MainPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MainPanel\RecentlyVisitedItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MainPanel\RecentlyVisitedItem.Designer.cs">
+      <DependentUpon>RecentlyVisitedItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MainPanel\RecentlyVisitedPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MainPanel\RecentlyVisitedPanel.Designer.cs">
+      <DependentUpon>RecentlyVisitedPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PatientsDetails\AllVisitsItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PatientsDetails\AllVisitsItem.Designer.cs">
+      <DependentUpon>AllVisitsItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PatientsDetails\EditShortPatientDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PatientsDetails\EditShortPatientDetails.Designer.cs">
+      <DependentUpon>EditShortPatientDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PatientsDetails\PredictedResults.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PatientsDetails\PredictedResults.Designer.cs">
+      <DependentUpon>PredictedResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PatientsDetails\PreviousTests.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PatientsDetails\PreviousTests.Designer.cs">
+      <DependentUpon>PreviousTests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PatientsDetails\ShortPatientDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PatientsDetails\ShortPatientDetails.Designer.cs">
+      <DependentUpon>ShortPatientDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PatientsDetails\PredictedResultsItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PatientsDetails\PredictedResultsItem.Designer.cs">
+      <DependentUpon>PredictedResultsItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PatientsList\AllPatientsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PatientsList\AllPatientsPanel.designer.cs">
+      <DependentUpon>AllPatientsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PatientsList\AllPatientsItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PatientsList\AllPatientsItem.designer.cs">
+      <DependentUpon>AllPatientsItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Pressure\PressureControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Pressure\PressureControl.Designer.cs">
+      <DependentUpon>PressureControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Report\FullReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Report\FullReport.Designer.cs">
+      <DependentUpon>FullReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Report\Printer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Report\Printer.Designer.cs">
+      <DependentUpon>Printer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Report\ReportTestControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Report\ReportTestControl.Designer.cs">
+      <DependentUpon>ReportTestControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Report\ReportBestTestControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Report\ReportBestTestControl.Designer.cs">
+      <DependentUpon>ReportBestTestControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ServiceControls\ButtonPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ServiceControls\ColorSlider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ServiceControls\ComboBoxClean.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ServiceControls\LabelExtended.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ServiceControls\RoundedCornersPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ServiceControls\RoundedCornersPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ServiceControls\RoundedCornersPictureBoxForVideoStream.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ServiceControls\SmallCheckBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ServiceControls\SmallCheckBox.Designer.cs">
+      <DependentUpon>SmallCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ServiceControls\SmallRadioButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ServiceControls\SmallRadioButton.Designer.cs">
+      <DependentUpon>SmallRadioButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Settings\SettingsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Settings\SettingsControl.Designer.cs">
+      <DependentUpon>SettingsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Visit\TestsLeftParameterHeader.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Visit\TestsLeftParameterHeader.Designer.cs">
+      <DependentUpon>TestsLeftParameterHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Visit\TestsRightParameterHeader.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Visit\TestsRightParameterHeader.Designer.cs">
+      <DependentUpon>TestsRightParameterHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Visit\TestsRightParameterItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Visit\TestsRightParameterItem.Designer.cs">
+      <DependentUpon>TestsRightParameterItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Visit\TestsLeftParameterItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Visit\TestsLeftParameterItem.Designer.cs">
+      <DependentUpon>TestsLeftParameterItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Visit\UCTestGraph.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Visit\UCTestGraph.Designer.cs">
+      <DependentUpon>UCTestGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Visit\VisitFullControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Visit\VisitFullControl.Designer.cs">
+      <DependentUpon>VisitFullControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Visit\VistTestsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Visit\VistTestsControl.Designer.cs">
+      <DependentUpon>VistTestsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PressureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PressureForm.designer.cs">
+      <DependentUpon>PressureForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainMenuForm.Designer.cs">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormBackGround.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormBackGround.designer.cs">
+      <DependentUpon>FormBackGround.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MonthCalendarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MonthCalendarForm.Designer.cs">
+      <DependentUpon>MonthCalendarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiUtils.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PatientsDetails\PatientDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PatientsDetails\PatientDetails.Designer.cs">
+      <DependentUpon>PatientDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\Doctors\EditShortDoctorDetails.resx">
+      <DependentUpon>EditShortDoctorDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Doctors\LogInControl.resx">
+      <DependentUpon>LogInControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MainPanel\MainPanel.resx">
+      <DependentUpon>MainPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MainPanel\RecentlyVisitedItem.resx">
+      <DependentUpon>RecentlyVisitedItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MainPanel\RecentlyVisitedPanel.resx">
+      <DependentUpon>RecentlyVisitedPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PatientsDetails\AllVisitsItem.resx">
+      <DependentUpon>AllVisitsItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PatientsDetails\EditShortPatientDetails.resx">
+      <DependentUpon>EditShortPatientDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PatientsDetails\PredictedResults.resx">
+      <DependentUpon>PredictedResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PatientsDetails\PreviousTests.resx">
+      <DependentUpon>PreviousTests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PatientsDetails\ShortPatientDetails.resx">
+      <DependentUpon>ShortPatientDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PatientsDetails\PatientDetails.resx">
+      <DependentUpon>PatientDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PatientsDetails\PredictedResultsItem.resx">
+      <DependentUpon>PredictedResultsItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PatientsList\AllPatientsPanel.resx">
+      <DependentUpon>AllPatientsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PatientsList\AllPatientsItem.resx">
+      <DependentUpon>AllPatientsItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Pressure\PressureControl.resx">
+      <DependentUpon>PressureControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Report\FullReport.resx">
+      <DependentUpon>FullReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Report\Printer.resx">
+      <DependentUpon>Printer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Report\ReportTestControl.resx">
+      <DependentUpon>ReportTestControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Report\ReportBestTestControl.resx">
+      <DependentUpon>ReportBestTestControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ServiceControls\SmallCheckBox.resx">
+      <DependentUpon>SmallCheckBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ServiceControls\SmallRadioButton.resx">
+      <DependentUpon>SmallRadioButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Settings\SettingsControl.resx">
+      <DependentUpon>SettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Visit\TestsLeftParameterHeader.resx">
+      <DependentUpon>TestsLeftParameterHeader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Visit\TestsRightParameterHeader.resx">
+      <DependentUpon>TestsRightParameterHeader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Visit\TestsRightParameterItem.resx">
+      <DependentUpon>TestsRightParameterItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Visit\TestsLeftParameterItem.resx">
+      <DependentUpon>TestsLeftParameterItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Visit\UCTestGraph.resx">
+      <DependentUpon>UCTestGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Visit\VisitFullControl.resx">
+      <DependentUpon>VisitFullControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Visit\VistTestsControl.resx">
+      <DependentUpon>VistTestsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PressureForm.resx">
+      <DependentUpon>PressureForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainMenuForm.resx">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormBackGround.resx">
+      <DependentUpon>FormBackGround.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MonthCalendarForm.resx">
+      <DependentUpon>MonthCalendarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\CommonLib\CommonLib.csproj">
+      <Project>{8c470327-cacd-4eac-a7f4-f2bccbd0adae}</Project>
+      <Name>CommonLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DoCalc\DoCalc.csproj">
+      <Project>{2c4f17e4-fd93-486f-923f-cc10995da007}</Project>
+      <Name>DoCalc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Globals\Globals.csproj">
+      <Project>{64e05fc1-26e1-4780-8fae-aa18ca64d224}</Project>
+      <Name>Globals</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Managers\Implementation\ImplementationLib\ImplementationLib.csproj">
+      <Project>{AC8CFC30-4425-47F6-8DEA-6F1B7905D05C}</Project>
+      <Name>ImplementationLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Managers\Interfaces\InterfacesLib\InterfacesLib.csproj">
+      <Project>{6E638FA8-8A5B-4E47-AA79-570AD1FFF691}</Project>
+      <Name>InterfacesLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsList\patients-list-arrow-right-btn-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsList\patients-list-arrow-right-btn-over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsList\patients-list-arrow-right-btn-normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsList\patients-list-arrow-right-btn-disable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsList\history-sort-arrows-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsList\history-sort-arrows-unknown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsList\history-sort-arrows-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsList\history-search-background-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsList\patients-list-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsList\patients-list-over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsList\patients-list-normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsList\patients-list-search-disable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsList\patients-list-search-background-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsList\patients-list-add-new-patient-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsList\patients-list-add-new-patient-over .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsList\patients-list-add-new-patient-disable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsList\patients-list-add-new-patient-normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsList\patients-list-item-background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\history-report-printer-disable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TopPanel\top-panel-techno-palm-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TopPanel\top-panel-health-clinic-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TopPanel\top-panel-init.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsList\patients-list-sort-unknown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsList\patients-list-sort-down-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsList\patients-list-sort-up-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TopPanel\top-panel-arrow-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TopPanel\top-panel-arrow-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TopPanel\top-panel-main-menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsDetails\patients-details-left-background-img-noraml.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsDetails\patients-details-right-background-img-noraml.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsDetails\patients-details-edit-btn-disable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsDetails\patients-details-edit-btn-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsDetails\patients-details-edit-btn-over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsDetails\patients-details-edit-btn-normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsDetails\patients-details-green-res-ellipse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsDetails\patients-details-red-res-ellipse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsDetails\patients-details-new-test-session-disable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsDetails\patients-details-new-test-session-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsDetails\patients-details-new-test-session-over .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsDetails\patients-details-new-test-session-normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsDetails\patients-details-pre-post-session-disable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsDetails\patients-details-pre-post-session-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsDetails\patients-details-pre-post-session-over .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsDetails\patients-details-pre-post-session-normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ServiceControls\unselected-radiobtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ServiceControls\selected-radiobtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ServiceControls\check-box-checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ServiceControls\check-box-unchecked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsDetails\edit-patients-details-control-rectangle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsDetails\edit-patients-details-calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="License-LGPL.txt" />
+    <None Include="Resources\PatientsDetails\Extended\patients-details-new-test-session-over EX.png" />
+    <None Include="Resources\PatientsDetails\Extended\patients-details-new-test-session-disableEX.png" />
+    <None Include="Resources\PatientsDetails\Extended\patients-details-pre-post-session-over EX.png" />
+    <None Include="Resources\PatientsDetails\Extended\patients-details-new-test-session-normalEX.png" />
+    <None Include="Resources\PatientsDetails\Extended\patients-details-new-test-session-downEx.png" />
+    <None Include="Resources\MainMenu\main-menu-close-over.png" />
+    <None Include="Resources\MainMenu\main-menu-close-down.png" />
+    <None Include="Resources\MainMenu\main-menu-close-disable.png" />
+    <None Include="Resources\MainMenu\main-menu-adit-doctor-over.png" />
+    <None Include="Resources\MainMenu\main-menu-adit-doctor-down.png" />
+    <None Include="Resources\MainMenu\main-menu-adit-doctor-disable.png" />
+    <None Include="Resources\MainMenu\main-menu-add-doctor-over.png" />
+    <None Include="Resources\MainMenu\main-menu-add-doctor-down.png" />
+    <None Include="Resources\MainMenu\main-menu-add-doctor-disable.png" />
+    <None Include="Resources\MainMenu\main-menu-add-doctor-normal.png" />
+    <None Include="Resources\MainMenu\main-menu-adit-doctor-normal.png" />
+    <None Include="Resources\MainMenu\main-menu-close-normal.png" />
+    <None Include="Resources\Login\login-connect-button-normal.png" />
+    <None Include="Resources\Login\login-connect-button-over.png" />
+    <None Include="Resources\Login\login-connect-button-down.png" />
+    <None Include="Resources\Login\login-connect-button-disable.png" />
+    <None Include="Resources\TopPanel\top-panel-user-img.png" />
+    <None Include="Resources\MainMenu\Menu-Background.png" />
+    <None Include="Resources\MainMenu\main-menu-settings-over.png" />
+    <None Include="Resources\MainMenu\main-menu-settings-down.png" />
+    <None Include="Resources\MainMenu\main-menu-settings-disable.png" />
+    <None Include="Resources\MainMenu\main-menu-logout-over.png" />
+    <None Include="Resources\MainMenu\main-menu-logout-down.png" />
+    <None Include="Resources\MainMenu\main-menu-logout-disable.png" />
+    <None Include="Resources\MainMenu\main-menu-calibration-over.png" />
+    <None Include="Resources\MainMenu\main-menu-calibration-down.png" />
+    <None Include="Resources\MainMenu\main-menu-calibration-disable.png" />
+    <None Include="Resources\MainMenu\main-menu-settings-normal.png" />
+    <None Include="Resources\MainMenu\main-menu-logout-normal.png" />
+    <None Include="Resources\MainMenu\main-menu-calibration-normal.png" />
+    <None Include="Resources\MainPanel\main-panel-background-img.png" />
+    <None Include="Resources\MainPanel\main-panel-viewer-background-img.png" />
+    <None Include="Resources\MainPanel\main-panel-btn-play-start-normal.png" />
+    <None Include="Resources\MainPanel\main-panel-btn-play-start-over.png" />
+    <None Include="Resources\MainPanel\main-panel-btn-play-start-down.png" />
+    <None Include="Resources\MainPanel\main-panel-btn-play-start-disable.png" />
+    <None Include="Resources\MainPanel\main-panel-monthly-tests-background-img.png" />
+    <None Include="Resources\MainPanel\main-panel-ellipse-yellow.png" />
+    <None Include="Resources\MainPanel\main-panel-ellipse-pink.png" />
+    <None Include="Resources\MainPanel\main-panel-ellipse-blue.png" />
+    <None Include="Resources\MainPanel\main-panel-visits-list-background-img.png" />
+    <None Include="Resources\Login\login-top-left-techno-palm-logo.png" />
+    <None Include="Resources\Login\login-top-left-normal.png" />
+    <None Include="Resources\Login\login-top-left-over.png" />
+    <None Include="Resources\Login\login-top-left-down.png" />
+    <None Include="Resources\Login\login-top-left-disable..png" />
+    <None Include="Resources\Login\login-bottom-right-normal.png" />
+    <None Include="Resources\Login\login-bottom-right-over.png" />
+    <None Include="Resources\Login\login-bottom-right-down.png" />
+    <None Include="Resources\Login\login-bottom-right-disable.png" />
+    <None Include="Resources\Login\login-dialog-background.png" />
+    <None Include="Resources\Pressure\Restrictive.bmp" />
+    <None Include="Resources\Pressure\Obstructive.bmp" />
+    <None Include="Resources\Pressure\Healthy.bmp" />
+    <None Include="Resources\Visit\visit-remove-test-normal.png" />
+    <None Include="Resources\Visit\visit-remove-test-over.png" />
+    <None Include="Resources\Visit\visit-remove-test-down.png" />
+    <None Include="Resources\Visit\visit-remove-test-disable.png" />
+    <None Include="Resources\Pressure\pressure-close-normal.png" />
+    <None Include="Resources\Pressure\pressure-close-over.png" />
+    <None Include="Resources\Pressure\pressure-close-down.png" />
+    <None Include="Resources\Pressure\pressure-close-disable.png" />
+    <None Include="Resources\PatientsDetails\patient-details-blue-background.png" />
+    <None Include="Resources\init-process.gif" />
+    <None Include="Resources\Report\report-horizontal-long-gray-line.png" />
+    <None Include="Resources\PatientsDetails\patients-details-comments-normal.png" />
+    <None Include="Resources\PatientsDetails\patients-details-comments-over.png" />
+    <None Include="Resources\PatientsDetails\patients-details-comments-down.png" />
+    <None Include="Resources\PatientsDetails\patients-details-comments-disable.png" />
+    <None Include="Resources\PatientsDetails\patients-details-button-background-img.png" />
+    <None Include="Resources\PatientsDetails\patients-details-printer-items-normal.png" />
+    <None Include="Resources\PatientsDetails\patients-details-printer-items-over.png" />
+    <None Include="Resources\PatientsDetails\patients-details-printer-items-down.png" />
+    <None Include="Resources\PatientsDetails\patients-details-printer-items-disable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Visit\visit-background-img.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
